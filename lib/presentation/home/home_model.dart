@@ -4,24 +4,24 @@ import '../../core/utils/string_manager.dart';
 
 class HomeCard {
   String imageName;
-  String CardTitle;
+  String cardTitle;
   HomeCard({
     required this.imageName,
-    required this.CardTitle,
+    required this.cardTitle,
   });
 }
 
 List<HomeCard> homeCardList = [
   HomeCard(
       imageName: ImageManager.moviePoster,
-      CardTitle: StringManager.HomeCardMovies),
+      cardTitle: StringManager.homeCardMovies),
   HomeCard(
       imageName: ImageManager.seriePoster,
-      CardTitle: StringManager.HomeCardSeries),
+      cardTitle: StringManager.homeCardSeries),
   HomeCard(
       imageName: ImageManager.animePoster,
-      CardTitle: StringManager.HomeCardAnime),
+      cardTitle: StringManager.homeCardAnime),
   HomeCard(
       imageName: ImageManager.actorPoster,
-      CardTitle: StringManager.HomeCardActors),
+      cardTitle: StringManager.homeCardActors),
 ];

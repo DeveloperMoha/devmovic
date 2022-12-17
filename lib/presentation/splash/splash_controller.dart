@@ -8,6 +8,6 @@ class SplashController {
     Timer(
         Duration(seconds: noOfSeconds),
         () => Navigator.of(context).pushReplacement(MaterialPageRoute(
-            builder: (BuildContext context) => HomeScreen())));
+            builder: (BuildContext context) => const HomeScreen())));
   }
 }

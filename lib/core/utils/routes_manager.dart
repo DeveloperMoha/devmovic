@@ -1,5 +1,5 @@
-import 'package:devmovic/modules/home/home_view.dart';
-import 'package:devmovic/modules/splash/splash_view.dart';
+import 'package:devmovic/presentation/home/home_view.dart';
+import 'package:devmovic/presentation/splash/splash_view.dart';
 import 'package:flutter/material.dart';
 
 class Routes {
@@ -15,19 +15,19 @@ class RouteGenerator {
   static Route<dynamic> getRoute(RouteSettings settings) {
     switch (settings.name) {
       case Routes.splashRoute:
-        return MaterialPageRoute(builder: (_) => SplashScreen());
+        return MaterialPageRoute(builder: (_) => const SplashScreen());
       case Routes.homeRoute:
-        return MaterialPageRoute(builder: (_) => HomeScreen());
+        return MaterialPageRoute(builder: (_) => const HomeScreen());
       case Routes.movieRoute:
-        return MaterialPageRoute(builder: (_) => SplashScreen());
+        return MaterialPageRoute(builder: (_) => const SplashScreen());
       case Routes.serieRoute:
-        return MaterialPageRoute(builder: (_) => SplashScreen());
+        return MaterialPageRoute(builder: (_) => const SplashScreen());
       case Routes.animeRoute:
-        return MaterialPageRoute(builder: (_) => SplashScreen());
+        return MaterialPageRoute(builder: (_) => const SplashScreen());
       case Routes.actorRoute:
-        return MaterialPageRoute(builder: (_) => SplashScreen());
+        return MaterialPageRoute(builder: (_) => const SplashScreen());
       default:
-        return MaterialPageRoute(builder: (_) => SplashScreen());
+        return MaterialPageRoute(builder: (_) => const SplashScreen());
     }
   }
 }
