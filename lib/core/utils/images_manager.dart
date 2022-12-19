@@ -18,4 +18,8 @@ class ImageManager {
   static const String animePoster1 = "$home/anime_poster1.jpg";
   static const String actorPoster = "$home/actor_poster1.jpg";
   static const String actorPoster1 = "$home/actor_poster1.jpg";
+
+  static const String trendPoster1 = "$home/trending1.jpg";
+  static const String trendPoster2 = "$home/trending2.png";
+  static const String trendPoster3 = "$home/trending3.jpeg";
 }

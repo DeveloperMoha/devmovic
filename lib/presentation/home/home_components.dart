@@ -218,7 +218,109 @@ class HomeComponents {
                         textAlign: TextAlign.center,
                         style: const TextStyle(
                           fontFamily: FontManager.keniaRegular,
-                          fontSize: 35,
+                          fontSize: 30,
+                          color: ColorManager.mainDarkColor,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              InkWell(
+                onTap: () {},
+                child: Container(
+                  width: 180,
+                  height: 250,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    image: DecorationImage(
+                        image: AssetImage(homeCardList[4].imageName),
+                        fit: BoxFit.fill),
+                  ),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      gradient: const LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        stops: [0.1, 0.7],
+                        colors: [
+                          Color(0x25d3352a),
+                          Color(0x10000000),
+                        ],
+                      ),
+                    ),
+                    child: Container(
+                      width: double.infinity,
+                      height: 50.0,
+                      padding: const EdgeInsets.all(10.0),
+                      margin: const EdgeInsets.only(top: 200),
+                      decoration: const BoxDecoration(
+                          color: Color(0xCCffffff),
+                          borderRadius: BorderRadius.only(
+                              bottomRight: Radius.circular(20),
+                              bottomLeft: Radius.circular(20))),
+                      child: Text(
+                        homeCardList[4].cardTitle,
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(
+                          fontFamily: FontManager.keniaRegular,
+                          fontSize: 30,
+                          color: ColorManager.mainDarkColor,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              InkWell(
+                onTap: () {},
+                child: Container(
+                  width: 180,
+                  height: 250,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    image: DecorationImage(
+                        image: AssetImage(homeCardList[5].imageName),
+                        fit: BoxFit.fill),
+                  ),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      gradient: const LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        stops: [0.1, 0.7],
+                        colors: [
+                          Color(0x25d3352a),
+                          Color(0x10000000),
+                        ],
+                      ),
+                    ),
+                    child: Container(
+                      width: double.infinity,
+                      height: 50.0,
+                      padding: const EdgeInsets.all(10.0),
+                      margin: const EdgeInsets.only(top: 200),
+                      decoration: const BoxDecoration(
+                          color: Color(0xCCffffff),
+                          borderRadius: BorderRadius.only(
+                              bottomRight: Radius.circular(20),
+                              bottomLeft: Radius.circular(20))),
+                      child: Text(
+                        homeCardList[5].cardTitle,
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(
+                          fontFamily: FontManager.keniaRegular,
+                          fontSize: 30,
                           color: ColorManager.mainDarkColor,
                         ),
                       ),

@@ -13,7 +13,7 @@ class HomeCard {
 
 List<HomeCard> homeCardList = [
   HomeCard(
-      imageName: ImageManager.moviePoster,
+      imageName: ImageManager.moviePoster1,
       cardTitle: StringManager.homeCardMovies),
   HomeCard(
       imageName: ImageManager.seriePoster,
@@ -22,6 +22,12 @@ List<HomeCard> homeCardList = [
       imageName: ImageManager.animePoster,
       cardTitle: StringManager.homeCardAnime),
   HomeCard(
-      imageName: ImageManager.actorPoster,
-      cardTitle: StringManager.homeCardActors),
+      imageName: ImageManager.trendPoster1,
+      cardTitle: StringManager.homeCardTrendingMovies),
+  HomeCard(
+      imageName: ImageManager.trendPoster2,
+      cardTitle: StringManager.homeCardTrendingSeries),
+  HomeCard(
+      imageName: ImageManager.trendPoster3,
+      cardTitle: StringManager.homeCardTrendingPerson),
 ];

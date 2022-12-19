@@ -15,7 +15,7 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         //automaticallyImplyLeading: false,
         systemOverlayStyle: SystemUiOverlayStyle.light,
-        backgroundColor: const Color(0x33ffffff),
+        backgroundColor: const Color(0x66ffffff),
         elevation: 0.0,
         title: Container(
           width: 130,
@@ -28,8 +28,8 @@ class HomeScreen extends StatelessWidget {
         ),
         actions: [
           IconButton(
-            icon: const Icon(Icons.search),
-            tooltip: 'search area',
+            icon: const Icon(Icons.more_vert_sharp),
+            tooltip: 'more settings',
             iconSize: 35,
             color: ColorManager.whiteColor,
             padding: const EdgeInsets.fromLTRB(10, 5, 20, 5),
@@ -42,7 +42,7 @@ class HomeScreen extends StatelessWidget {
 
       body: Container(
         margin: const EdgeInsets.only(top: 0),
-        padding: const EdgeInsets.only(top: 50),
+        padding: const EdgeInsets.only(top: 65),
         decoration: const BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
