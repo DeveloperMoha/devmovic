@@ -18,7 +18,7 @@ class AppConstants {
   static const String animeImgUrl = "https://simkl.in/posters/";
 
   static String getAnimePoster(String animePosterUrl) {
-    return "${animeImgUrl}${animeImgUrl}_c.jpg";
+    return "${animeImgUrl}${animePosterUrl}_c.jpg";
   }
 
   static String getAnimeCover(String animeCoverUrl) {

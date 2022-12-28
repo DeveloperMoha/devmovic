@@ -1,6 +1,7 @@
 import 'package:devmovic/core/utils/images_manager.dart';
 import 'package:devmovic/domain/entities/series_entity.dart';
 import 'package:devmovic/presentation/series/serie_cubit.dart';
+import 'package:devmovic/presentation/series/serie_details.dart';
 import 'package:devmovic/presentation/series/serie_states.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -101,6 +102,25 @@ class _SeriesScreenState extends State<SeriesScreen> {
                               itemCount: topRatedSeriesList.length,
                               itemBuilder: (context, index) {
                                 return InkWell(
+                                  onTap: () => Navigator.of(context)
+                                      .pushReplacement(MaterialPageRoute(
+                                    builder: (BuildContext context) =>
+                                        SerieDetailsScreen(
+                                            imagePath: topRatedSeriesList[index]
+                                                .imagePath,
+                                            firstAirDate:
+                                                topRatedSeriesList[index]
+                                                    .firstAirDate,
+                                            genreId: topRatedSeriesList[index]
+                                                .genreId,
+                                            serieName: topRatedSeriesList[index]
+                                                .serieName,
+                                            serieOverview:
+                                                topRatedSeriesList[index]
+                                                    .serieOverview,
+                                            voteCount: topRatedSeriesList[index]
+                                                .voteCount),
+                                  )),
                                   child: AspectRatio(
                                     aspectRatio: 2.4 / 3,
                                     child: Container(
@@ -143,9 +163,14 @@ class _SeriesScreenState extends State<SeriesScreen> {
                         }
                         return Center(
                           child: Container(
-                            width: 100,
                             height: 100,
-                            child: const Text("no data sorry error"),
+                            child: const Text(
+                              "Data is Loading ...",
+                              style: TextStyle(
+                                  fontSize: 28,
+                                  fontWeight: FontWeight.w500,
+                                  color: Colors.white),
+                            ),
                           ),
                         );
                       })),
@@ -197,6 +222,27 @@ class _SeriesScreenState extends State<SeriesScreen> {
                               itemCount: popularSeriesList.length,
                               itemBuilder: (context, index) {
                                 return InkWell(
+                                  onTap: () => Navigator.of(context)
+                                      .pushReplacement(MaterialPageRoute(
+                                    builder: (BuildContext context) =>
+                                        SerieDetailsScreen(
+                                            imagePath:
+                                                popularSeriesList[index]
+                                                    .imagePath,
+                                            firstAirDate:
+                                                popularSeriesList[index]
+                                                    .firstAirDate,
+                                            genreId:
+                                                popularSeriesList[index]
+                                                    .genreId,
+                                            serieName: popularSeriesList[index]
+                                                .serieName,
+                                            serieOverview:
+                                                popularSeriesList[index]
+                                                    .serieOverview,
+                                            voteCount: popularSeriesList[index]
+                                                .voteCount),
+                                  )),
                                   child: AspectRatio(
                                     aspectRatio: 2.4 / 3,
                                     child: Container(
@@ -239,9 +285,14 @@ class _SeriesScreenState extends State<SeriesScreen> {
                         }
                         return Center(
                           child: Container(
-                            width: 100,
                             height: 100,
-                            child: const Text("no data sorry error"),
+                            child: const Text(
+                              "Data is Loading ...",
+                              style: TextStyle(
+                                  fontSize: 28,
+                                  fontWeight: FontWeight.w500,
+                                  color: Colors.white),
+                            ),
                           ),
                         );
                       })),

@@ -1,3 +1,4 @@
+import 'package:devmovic/core/utils/constants_manager.dart';
 import 'package:devmovic/data/data_source/base_remote_datasource.dart';
 import 'package:devmovic/data/data_source/series_remote_data_source.dart';
 import 'package:devmovic/data/repository_impl/series_repository.dart';

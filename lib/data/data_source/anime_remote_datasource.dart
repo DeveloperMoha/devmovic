@@ -11,7 +11,7 @@ class AnimeDataSource implements BaseAnimeRemoteDataSource {
   Future<List<AnimeModel>> getAiringAnime() async {
     print("most getAiringAnime");
     var response = await Dio().get(AppConstants.getAirAnime);
-    print(response.data);
+    //print(response.data);
     if (response.statusCode == 200) {
       return List<AnimeModel>.from(
           (response.data as List).map((e) => AnimeModel.fromJson(e)));
@@ -39,7 +39,7 @@ class AnimeDataSource implements BaseAnimeRemoteDataSource {
   Future<List<AnimeModel>> getPremieresAnime() async {
     print("most getPremieresAnime");
     var response = await Dio().get(AppConstants.getPremieresAnime);
-    print(response.data);
+    //print(response.data);
     if (response.statusCode == 200) {
       return List<AnimeModel>.from(
           (response.data as List).map((e) => AnimeModel.fromJson(e)));

@@ -1,20 +1,16 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:devmovic/presentation/series/serie_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 import '../../core/utils/constants_manager.dart';
+import '../../core/utils/fonts_manager.dart';
 
 class SerieDetailsScreen extends StatelessWidget {
   final String imagePath;
   final String firstAirDate;
   final List<int> genreId;
-  final List<String> originCountry;
-  final int serieId;
   final String serieName;
   final String serieOverview;
-  final String seriePosterPath;
   final int voteCount;
 
   const SerieDetailsScreen({
@@ -22,11 +18,8 @@ class SerieDetailsScreen extends StatelessWidget {
     required this.imagePath,
     required this.firstAirDate,
     required this.genreId,
-    required this.originCountry,
-    required this.serieId,
     required this.serieName,
     required this.serieOverview,
-    required this.seriePosterPath,
     required this.voteCount,
   }) : super(key: key);
   @override
@@ -75,11 +68,12 @@ class SerieDetailsScreen extends StatelessWidget {
                   Align(
                     alignment: Alignment.bottomLeft,
                     child: Container(
+                      width: double.infinity,
                       color: Color(0x33ffffff),
                       padding: const EdgeInsets.all(18),
                       child: Text(
-                        movieName,
-                        style: TextStyle(
+                        serieName,
+                        style: const TextStyle(
                           fontSize: 22,
                           fontFamily: FontManager.dosisBold,
                           fontWeight: FontWeight.w700,
@@ -106,7 +100,7 @@ class SerieDetailsScreen extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
-                movieOverView,
+                serieOverview,
                 textAlign: TextAlign.center,
                 style: const TextStyle(
                   fontSize: 18,
@@ -119,7 +113,7 @@ class SerieDetailsScreen extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
-                adult ? "For Adult" : "Not For Adult",
+                "first Air Date : $firstAirDate",
                 textAlign: TextAlign.center,
                 style: const TextStyle(
                   fontSize: 20,
@@ -132,7 +126,7 @@ class SerieDetailsScreen extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
-                "gendre ids are : ${genderIds[0]} ",
+                "genre ids are : ${genreId[0]} ",
                 textAlign: TextAlign.center,
                 style: const TextStyle(
                   fontSize: 20,

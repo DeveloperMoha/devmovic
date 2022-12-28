@@ -61,7 +61,7 @@ class _MoviesScreenState extends State<MoviesScreen> {
               scrollDirection: Axis.vertical,
               child: Container(
                 margin: const EdgeInsets.only(top: 0),
-                padding: const EdgeInsets.only(top: 30, left: 10),
+                padding: const EdgeInsets.only(top: 30, left: 10, right: 10),
                 decoration: const BoxDecoration(
                   gradient: LinearGradient(
                     begin: Alignment.topCenter,
@@ -89,18 +89,14 @@ class _MoviesScreenState extends State<MoviesScreen> {
                             fontWeight: FontWeight.bold),
                       ),
                     ),
-                    // ElevatedButton(
-                    //     onPressed: () {
-                    //       BlocProvider.of<MoviesCubit>(context)
-                    //           .getpopularMovies();
-                    //     },
-                    //     child: Text("Refresh")),
                     Container(
                         padding: const EdgeInsets.all(10),
-                        color: Color(0x33ffffff),
+                        decoration: BoxDecoration(
+                            color: Color(0x33ffffff),
+                            borderRadius: BorderRadius.circular(20)),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             const Padding(
                               padding: EdgeInsets.only(bottom: 10),
@@ -186,13 +182,14 @@ class _MoviesScreenState extends State<MoviesScreen> {
                             ),
                           ],
                         )),
-
                     SizedBox(
                       height: 30,
                     ),
                     Container(
                         padding: const EdgeInsets.all(10),
-                        color: Color(0x33ffffff),
+                        decoration: BoxDecoration(
+                            color: Color(0x33ffffff),
+                            borderRadius: BorderRadius.circular(20)),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -284,7 +281,9 @@ class _MoviesScreenState extends State<MoviesScreen> {
                     ),
                     Container(
                         padding: const EdgeInsets.all(10),
-                        color: Color(0x33ffffff),
+                        decoration: BoxDecoration(
+                            color: Color(0x33ffffff),
+                            borderRadius: BorderRadius.circular(20)),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -374,7 +373,9 @@ class _MoviesScreenState extends State<MoviesScreen> {
                     ),
                     Container(
                         padding: const EdgeInsets.all(10),
-                        color: Color(0x33ffffff),
+                        decoration: BoxDecoration(
+                            color: Color(0x33ffffff),
+                            borderRadius: BorderRadius.circular(20)),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [

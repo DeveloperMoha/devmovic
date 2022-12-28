@@ -1,3 +1,4 @@
+import 'package:devmovic/presentation/anime/anime_screen.dart';
 import 'package:devmovic/presentation/home/home_view.dart';
 import 'package:devmovic/presentation/movies/movie_details.dart';
 import 'package:devmovic/presentation/movies/movies_screen.dart';
@@ -6,11 +7,12 @@ import 'package:devmovic/presentation/splash/splash_view.dart';
 import 'package:flutter/material.dart';
 
 class Routes {
-  static const String splashRoute = "/";
-  static const String homeRoute = "/home";
+  static const String splashRoute = "/splash";
+  static const String homeRoute = "/";
   static const String movieRoute = "/movie";
   static const String movieDetailsRoute = "/movie/details";
   static const String serieRoute = "/serie";
+  static const String serieDetailsRoute = "/serie/details";
   static const String animeRoute = "/anime";
   static const String actorRoute = "/actor";
 }
@@ -28,7 +30,7 @@ class RouteGenerator {
       case Routes.serieRoute:
         return MaterialPageRoute(builder: (_) => const SeriesScreen());
       case Routes.animeRoute:
-        return MaterialPageRoute(builder: (_) => const SeriesScreen());
+        return MaterialPageRoute(builder: (_) => const AnimeScreen());
       case Routes.actorRoute:
         return MaterialPageRoute(builder: (_) => const SplashScreen());
       default:

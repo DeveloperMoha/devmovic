@@ -1,7 +1,10 @@
 import 'package:devmovic/core/utils/color_manager.dart';
+import 'package:devmovic/core/utils/routes_manager.dart';
 import 'package:devmovic/core/utils/string_manager.dart';
+import 'package:devmovic/presentation/anime/anime_screen.dart';
 import 'package:devmovic/presentation/home/home_model.dart';
 import 'package:devmovic/presentation/movies/movies_screen.dart';
+import 'package:devmovic/presentation/series/serie_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../core/utils/fonts_manager.dart';
@@ -33,9 +36,10 @@ class HomeComponents {
             children: [
               InkWell(
                 onTap: () {
-                  Navigator.of(context).pushReplacement(MaterialPageRoute(
-                    builder: (BuildContext context) => const MoviesScreen(),
-                  ));
+                  // Navigator.of(context).pushReplacement(MaterialPageRoute(
+                  //   builder: (BuildContext context) => const MoviesScreen(),
+                  // ));
+                  Navigator.pushNamed(context, Routes.movieRoute);
                 },
                 child: Container(
                   width: 180,
@@ -83,7 +87,12 @@ class HomeComponents {
                 ),
               ),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  // Navigator.of(context).pushReplacement(MaterialPageRoute(
+                  //   builder: (BuildContext context) => const SeriesScreen(),
+                  // ));
+                  Navigator.pushNamed(context, Routes.serieRoute);
+                },
                 child: Container(
                   width: 180,
                   height: 250,
@@ -138,7 +147,12 @@ class HomeComponents {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  // Navigator.of(context).pushReplacement(MaterialPageRoute(
+                  //   builder: (BuildContext context) => const AnimeScreen(),
+                  // ));
+                  Navigator.pushNamed(context, Routes.animeRoute);
+                },
                 child: Container(
                   width: 180,
                   height: 250,
