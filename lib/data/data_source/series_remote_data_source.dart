@@ -10,8 +10,9 @@ class SeriesRemoteDataSource implements BaseSeriesRemoteDataSource {
   @override
   Future<List<SeriesModel>> getAiringTodaySeries() async {
     print("most getAiringTodaySeries");
+    print("link is : ${AppConstants.getAiringTodaySeriesUrl}");
     var response = await Dio().get(AppConstants.getAiringTodaySeriesUrl);
-    //print(response.data);
+    print(response.data);
     if (response.statusCode == 200) {
       return List<SeriesModel>.from((response.data["results"] as List)
           .map((e) => SeriesModel.fromJson(e)));
@@ -24,9 +25,9 @@ class SeriesRemoteDataSource implements BaseSeriesRemoteDataSource {
   @override
   Future<List<SeriesModel>> getOnTheAirSeries() async {
     print("most getOnTheAirSeries");
-    //print("link is : ${AppConstants.getOnTheAirSeriesUrl}");
+    print("link is : ${AppConstants.getOnTheAirSeriesUrl}");
     var response = await Dio().get(AppConstants.getOnTheAirSeriesUrl);
-    // print(response.data);
+    print(response.data);
     if (response.statusCode == 200) {
       return List<SeriesModel>.from((response.data["results"] as List)
           .map((e) => SeriesModel.fromJson(e)));

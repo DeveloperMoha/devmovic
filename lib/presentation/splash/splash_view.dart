@@ -16,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
   final SplashController _splashController = SplashController();
   @override
   Widget build(BuildContext context) {
-    //_splashController.goHome(5, context);
+    // _splashController.goHome(5, context);
     return Scaffold(
       body: Container(
         decoration: const BoxDecoration(

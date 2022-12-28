@@ -1,12 +1,13 @@
 import 'package:devmovic/core/utils/color_manager.dart';
 import 'package:devmovic/core/utils/string_manager.dart';
 import 'package:devmovic/presentation/home/home_model.dart';
+import 'package:devmovic/presentation/movies/movies_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../core/utils/fonts_manager.dart';
 
 class HomeComponents {
-  Widget buildHomeContent() {
+  Widget buildHomeContent(context) {
     return SingleChildScrollView(
       padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 10),
       scrollDirection: Axis.vertical,
@@ -31,7 +32,11 @@ class HomeComponents {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushReplacement(MaterialPageRoute(
+                    builder: (BuildContext context) => const MoviesScreen(),
+                  ));
+                },
                 child: Container(
                   width: 180,
                   height: 250,

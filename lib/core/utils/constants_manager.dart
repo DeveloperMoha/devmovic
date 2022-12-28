@@ -6,6 +6,10 @@ class AppConstants {
   static const String baseMovieUrl = "https://api.themoviedb.org/3";
   static const String movDbBaseImgUrl = "https://image.tmdb.org/t/p/w500";
 
+  static String getMovDbImage(String path) {
+    return "$movDbBaseImgUrl$path";
+  }
+
   static const String baseAnimeUrl = "https://api.simkl.com/anime";
 
   //Url structure: {domain}{prefix}{image_url}{suffix}{extension}

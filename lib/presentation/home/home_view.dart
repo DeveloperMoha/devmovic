@@ -57,7 +57,7 @@ class HomeScreen extends StatelessWidget {
             ],
           ),
         ),
-        child: HomeComponents().buildHomeContent(),
+        child: HomeComponents().buildHomeContent(context),
       ),
       drawer: Drawer(
         // Add a ListView to the drawer. This ensures the user can scroll

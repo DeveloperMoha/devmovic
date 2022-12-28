@@ -120,7 +120,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: Routes.homeRoute,
+      initialRoute: Routes.serieRoute,
       onGenerateRoute: RouteGenerator.getRoute,
     );
   }
