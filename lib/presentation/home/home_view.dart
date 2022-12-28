@@ -20,7 +20,7 @@ class HomeScreen extends StatelessWidget {
         title: Container(
           width: 130,
           height: 60,
-          margin: const EdgeInsets.only(left: 60),
+          margin: const EdgeInsets.only(left: 30),
           decoration: const BoxDecoration(
             image: DecorationImage(
                 image: AssetImage(ImageManager.splashlogo), fit: BoxFit.fill),

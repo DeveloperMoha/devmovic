@@ -42,7 +42,7 @@ class HomeComponents {
                   Navigator.pushNamed(context, Routes.movieRoute);
                 },
                 child: Container(
-                  width: 180,
+                  width: 150,
                   height: 250,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
@@ -94,7 +94,7 @@ class HomeComponents {
                   Navigator.pushNamed(context, Routes.serieRoute);
                 },
                 child: Container(
-                  width: 180,
+                  width: 150,
                   height: 250,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
@@ -154,7 +154,7 @@ class HomeComponents {
                   Navigator.pushNamed(context, Routes.animeRoute);
                 },
                 child: Container(
-                  width: 180,
+                  width: 150,
                   height: 250,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
@@ -201,7 +201,7 @@ class HomeComponents {
               InkWell(
                 onTap: () {},
                 child: Container(
-                  width: 180,
+                  width: 150,
                   height: 250,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
@@ -256,7 +256,7 @@ class HomeComponents {
               InkWell(
                 onTap: () {},
                 child: Container(
-                  width: 180,
+                  width: 150,
                   height: 250,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
@@ -303,7 +303,7 @@ class HomeComponents {
               InkWell(
                 onTap: () {},
                 child: Container(
-                  width: 180,
+                  width: 150,
                   height: 250,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
